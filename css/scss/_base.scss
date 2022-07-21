@@ -1,0 +1,12 @@
+body {
+    background: var(--#{$variable-prefix}main);
+    color: var(--#{$variable-prefix}opposite);
+}
+
+h1, h2, h3 {
+    text-transform: uppercase;
+}
+
+h1, h2 {
+    margin-bottom: 2rem;
+}

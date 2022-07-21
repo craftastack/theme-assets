@@ -1,0 +1,133 @@
+// Font Awesome Free
+$fa-font-path: "/assets/fonts/fontawesome-free";
+
+// Body & font
+$font-inter:                'Inter', sans-serif;
+$font-family-sans-serif:    $font-inter;
+
+$fonts: (
+    "inter":      $font-inter
+);
+
+// Colors
+@import "../../../../node_modules/st3phhays-assets/css/scss/variables/colors";
+
+// Theme names
+$craft:         "craft";
+$stack:         "stack";
+
+// Theme map
+$themes: (  
+    $craft: (
+        "alpha":                $blue-bootstrap,
+        "beta":                 $orange-bootstrap,
+        "gamma":                $red-bootstrap,
+        "delta":                $pink-bootstrap,
+        "epsilon":              $yellow-bootstrap,
+        "pink":                 $pink-bootstrap,
+        "red":                  $red-bootstrap,
+        "orange":               $orange-bootstrap,
+        "yellow":               $yellow-bootstrap,
+        "green":                $green-bootstrap,
+        "cyan":                 $cyan-bootstrap,
+        "blue":                 $blue-bootstrap,
+        "purple":               $purple-bootstrap,
+        "indigo":               $indigo-bootstrap,
+        "gray":                 $gray-bootstrap,
+        "brown":                $brown-bootstrap,
+        "white":                $white-bootstrap,
+        "black":                $black-bootstrap,
+        "main":                 $black-bootstrap,
+        "main-secondary":       $dark-bootstrap,
+        "opposite":             $light-bootstrap,
+        "opposite-secondary":   $white-bootstrap
+    ),
+    $stack: (
+        "alpha":                $blue-bootstrap,
+        "beta":                 $orange-bootstrap,
+        "gamma":                $red-bootstrap,
+        "delta":                $pink-bootstrap,
+        "epsilon":              $yellow-bootstrap,
+        "pink":                 $pink-bootstrap,
+        "red":                  $red-bootstrap,
+        "orange":               $orange-bootstrap,
+        "yellow":               $yellow-bootstrap,
+        "green":                $green-bootstrap,
+        "cyan":                 $cyan-bootstrap,
+        "blue":                 $blue-bootstrap,
+        "purple":               $purple-bootstrap,
+        "indigo":               $indigo-bootstrap,
+        "gray":                 $gray-bootstrap,
+        "brown":                $brown-bootstrap,
+        "white":                $white-bootstrap,
+        "black":                $black-bootstrap,
+        "main":                 $light-bootstrap,
+        "main-secondary":       $white-bootstrap,
+        "opposite":             $black-bootstrap,
+        "opposite-secondary":   $dark-bootstrap
+    )
+);
+
+$primary: $blue-bootstrap;
+
+// Maps
+@import "../../../../node_modules/st3phhays-assets/css/scss/variables/maps";
+
+// Global
+@import "../../../../node_modules/st3phhays-assets/css/scss/variables/global";
+
+// Cards
+$card-border-radius:    0;
+$card-bg:               var(--#{$variable-prefix}main);
+$card-border-color:     var(--#{$variable-prefix}opposite);
+
+// Buttons
+$btn-border-radius:     0;
+$btn-border-radius-sm:  0;
+$btn-border-radius-lg:  0;
+
+// Forms
+$input-border-radius:       0;
+$input-border-radius-sm:    0;
+$input-border-radius-lg:    0;
+
+$input-bg:                              var(--sh-main);
+$input-color:                           var(--sh-opposite);
+$input-border-color:                    var(--sh-opposite);
+$input-focus-box-shadow-default:        inset 0 1px 2px rgb(0 0 0 / 8%), 0 0 0 0.25rem rgb(12 138 146 / 25%);
+$input-focus-box-shadow-error:          inset 0 1px 2px rgb(0 0 0 / 8%), 0 0 0 0.25rem rgb(221 67 75 / 25%);
+$input-focus-box-shadow-pass:           inset 0 1px 2px rgb(0 0 0 / 8%), 0 0 0 0.25rem rgb(61 130 20 / 25%);
+$input-placeholder-color:               var(--sh-opposite);
+$input-plaintext-color:                 var(--sh-opposite);
+$input-focus-border-color:              $primary;
+
+$form-check-input-border:               1px solid var(--sh-gray);
+$form-check-input-border-radius:        0;
+
+// Badges
+$badge-border-radius:   0;
+
+// Borders
+$border-color:          var(--#{$variable-prefix}gray);
+
+// Carousels
+$carousel-control-color:             var(--#{$variable-prefix}alpha);
+$carousel-control-width:             10%;
+$carousel-indicator-active-bg:       var(--#{$variable-prefix}alpha);
+$carousel-indicator-width:           20px;
+$carousel-indicator-height:          20px;
+
+// Alerts
+$alert-border-radius:   0;
+
+// Nav Tabs
+$nav-link-color:                    var(--sh-white);
+$nav-link-hover-color:              var(--sh-alpha);
+$nav-tabs-link-active-color:        var(--sh-white);
+$nav-tabs-border-color:             var(--#{$variable-prefix}gray);
+$nav-tabs-link-hover-border-color:  var(--sh-gray) var(--sh-gray) var(--sh-main);
+$nav-tabs-border-radius:            0;
+
+// Validation
+$form-feedback-icon-valid:          url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'><path fill='#{$green-bootstrap}' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/></svg>") !default;
+$form-feedback-icon-invalid:        url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='#{$red-bootstrap}'><circle cx='6' cy='6' r='4.5'/><path stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/><circle cx='6' cy='8.2' r='.6' fill='#{$red-bootstrap}' stroke='none'/></svg>") !default;
