@@ -19,56 +19,52 @@ $stack:         "stack";
 // Theme map
 $themes: (  
     $craft: (
-        "alpha":                $blue-bootstrap,
-        "beta":                 $orange-bootstrap,
-        "gamma":                $red-bootstrap,
-        "delta":                $pink-bootstrap,
-        "epsilon":              $yellow-bootstrap,
-        "pink":                 $pink-bootstrap,
-        "red":                  $red-bootstrap,
-        "orange":               $orange-bootstrap,
-        "yellow":               $yellow-bootstrap,
-        "green":                $green-bootstrap,
-        "cyan":                 $cyan-bootstrap,
-        "blue":                 $blue-bootstrap,
-        "purple":               $purple-bootstrap,
-        "indigo":               $indigo-bootstrap,
-        "gray":                 $gray-bootstrap,
-        "brown":                $brown-bootstrap,
-        "white":                $white-bootstrap,
-        "black":                $black-bootstrap,
-        "main":                 $black-bootstrap,
-        "main-secondary":       $dark-bootstrap,
-        "opposite":             $light-bootstrap,
-        "opposite-secondary":   $white-bootstrap
+        "alpha":                $green-lettuce,
+        "beta":                 $purple-onion,
+        "gamma":                $red-ketchup,
+        "delta":                $yellow-yolk,
+        "epsilon":              $yellow-mustard,
+        "pink":                 $pink-radish,
+        "red":                  $red-ketchup,
+        "orange":               $orange-carrot,
+        "yellow":               $yellow-mustard,
+        "green":                $green-lettuce,
+        "blue":                 $blue-berry,
+        "purple":               $purple-onion,
+        "gray":                 $gray-spatula,
+        "brown":                $brown-bbq,
+        "white":                $white-mayo,
+        "black":                $black-olive,
+        "main":                 $black-olive,
+        "main-secondary":       $brown-bbq,
+        "opposite":             $white-mayo,
+        "opposite-secondary":   $white-sesame
     ),
     $stack: (
-        "alpha":                $blue-bootstrap,
-        "beta":                 $orange-bootstrap,
-        "gamma":                $red-bootstrap,
-        "delta":                $pink-bootstrap,
-        "epsilon":              $yellow-bootstrap,
-        "pink":                 $pink-bootstrap,
-        "red":                  $red-bootstrap,
-        "orange":               $orange-bootstrap,
-        "yellow":               $yellow-bootstrap,
-        "green":                $green-bootstrap,
-        "cyan":                 $cyan-bootstrap,
-        "blue":                 $blue-bootstrap,
-        "purple":               $purple-bootstrap,
-        "indigo":               $indigo-bootstrap,
-        "gray":                 $gray-bootstrap,
-        "brown":                $brown-bootstrap,
-        "white":                $white-bootstrap,
-        "black":                $black-bootstrap,
-        "main":                 $light-bootstrap,
-        "main-secondary":       $white-bootstrap,
-        "opposite":             $black-bootstrap,
-        "opposite-secondary":   $dark-bootstrap
+        "alpha":                $green-lettuce,
+        "beta":                 $purple-onion,
+        "gamma":                $red-ketchup,
+        "delta":                $yellow-yolk,
+        "epsilon":              $yellow-mustard,
+        "pink":                 $pink-radish,
+        "red":                  $red-ketchup,
+        "orange":               $orange-carrot,
+        "yellow":               $yellow-mustard,
+        "green":                $green-lettuce,
+        "blue":                 $blue-berry,
+        "purple":               $purple-onion,
+        "gray":                 $gray-spatula,
+        "brown":                $brown-bbq,
+        "white":                $white-mayo,
+        "black":                $black-olive,
+        "main":                 $white-sesame,
+        "main-secondary":       $white-mayo,
+        "opposite":             $black-olive,
+        "opposite-secondary":   $brown-bbq
     )
 );
 
-$primary: $blue-bootstrap;
+$primary: $green-lettuce;
 
 // Maps
 @import "../../../../node_modules/st3phhays-assets/css/scss/variables/maps";
@@ -129,5 +125,5 @@ $nav-tabs-link-hover-border-color:  var(--sh-gray) var(--sh-gray) var(--sh-main)
 $nav-tabs-border-radius:            0;
 
 // Validation
-$form-feedback-icon-valid:          url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'><path fill='#{$green-bootstrap}' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/></svg>") !default;
-$form-feedback-icon-invalid:        url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='#{$red-bootstrap}'><circle cx='6' cy='6' r='4.5'/><path stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/><circle cx='6' cy='8.2' r='.6' fill='#{$red-bootstrap}' stroke='none'/></svg>") !default;
+$form-feedback-icon-valid:          url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'><path fill='#{$green-lettuce}' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/></svg>") !default;
+$form-feedback-icon-invalid:        url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='#{$red-ketchup}'><circle cx='6' cy='6' r='4.5'/><path stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/><circle cx='6' cy='8.2' r='.6' fill='#{$red-ketchup}' stroke='none'/></svg>") !default;
