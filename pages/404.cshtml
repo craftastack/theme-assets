@@ -1,0 +1,9 @@
+PageLayout: Centered
+---
+@{
+    ViewBag.Title = "404 Page Not Found";
+    ViewBag.Excerpt = "Welp, you found a broken page. Click on a link in the top navigation to get back home.";
+}
+
+<h1 class="visually-hidden">@ViewBag.Title</h1>
+@Html.Partial("~/shared/toppings/_ComingSoon.cshtml")

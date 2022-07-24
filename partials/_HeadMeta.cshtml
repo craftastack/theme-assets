@@ -1,0 +1,57 @@
+@{
+    var title = Constants.Site.Title;
+    var excerpt = Constants.Site.Excerpt;
+    var ogImage = Constants.Site.Brand + "-og.png";
+    string baseUrl = Context.GetLink().TrimEnd('/');
+
+    if (Document.GetString("Page") != "Home")
+    {
+        title = title + " | " + (ViewBag.Title != null ? ViewBag.Title : Document.GetString("Title"));
+
+        @* Find Excerpt *@
+        if (ViewBag.Excerpt != null) 
+        {
+            excerpt = ViewBag.Excerpt;
+        } 
+        else if (Document.GetString("Excerpt") != null) 
+        {
+            excerpt = Document.GetString("Excerpt");
+        }
+
+        @* Find Image *@
+        if (ViewBag.OgImage != null) 
+        {
+            ogImage = ViewBag.OgImage;
+        } 
+        else if (Document.GetString("OgImage") != null) 
+        {
+            ogImage = Document.GetString("OgImage");
+        }
+    }
+}
+<meta name="theme-color" content="#8fcb18">
+<meta name="description" content="@excerpt" />
+@* Open Graph data *@
+<meta property="og:title" content="@title" />
+<meta property="og:description" content="@excerpt" />
+<meta property="og:image" content='@baseUrl/assets/images/toppings/social-share/@ogImage' />
+<meta property="og:site_name" content="@Constants.Site.Title" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="@baseUrl@Document.GetLink()" />
+@* Twitter Card data *@
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="">
+<meta name="twitter:creator" content="">
+@* Apple Touch and Favicons *@
+<link rel="icon" type="image/png" sizes="16x16" href='@baseUrl/favicon-16x16.png'>
+<link rel="icon" type="image/png" sizes="32x32" href='@baseUrl/favicon-32x32.png'>
+<link rel="icon" type="image/png" sizes="96x96" href='@baseUrl/favicon-96x96.png'>
+<link rel="apple-touch-icon" href='@baseUrl/apple-touch-icon.png' />
+<link rel="apple-touch-icon" sizes="152x152" href='@baseUrl/apple-touch-icon-152x152.png' />
+<link rel="apple-touch-icon" sizes="167x167" href='@baseUrl/apple-touch-icon-167x167.png' />
+<link rel="apple-touch-icon" sizes="180x180" href='@baseUrl/apple-touch-icon-180x180.png' />
+<link rel="manifest" href="@baseUrl/site.webmanifest">
+<title>@title</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
