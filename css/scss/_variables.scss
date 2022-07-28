@@ -74,8 +74,8 @@ $primary: $green-lettuce;
 
 // Cards
 $card-border-radius:    0;
-$card-bg:               var(--#{$variable-prefix}main);
-$card-border-color:     var(--#{$variable-prefix}opposite);
+$card-bg:               var(--#{$prefix}main);
+$card-border-color:     var(--#{$prefix}opposite);
 
 // Buttons
 $btn-border-radius:     0;
@@ -104,12 +104,12 @@ $form-check-input-border-radius:        0;
 $badge-border-radius:   0;
 
 // Borders
-$border-color:          var(--#{$variable-prefix}gray);
+$border-color:          var(--#{$prefix}gray);
 
 // Carousels
-$carousel-control-color:             var(--#{$variable-prefix}alpha);
+$carousel-control-color:             var(--#{$prefix}alpha);
 $carousel-control-width:             10%;
-$carousel-indicator-active-bg:       var(--#{$variable-prefix}alpha);
+$carousel-indicator-active-bg:       var(--#{$prefix}alpha);
 $carousel-indicator-width:           20px;
 $carousel-indicator-height:          20px;
 
@@ -120,7 +120,7 @@ $alert-border-radius:   0;
 $nav-link-color:                    var(--sh-white);
 $nav-link-hover-color:              var(--sh-alpha);
 $nav-tabs-link-active-color:        var(--sh-white);
-$nav-tabs-border-color:             var(--#{$variable-prefix}gray);
+$nav-tabs-border-color:             var(--#{$prefix}gray);
 $nav-tabs-link-hover-border-color:  var(--sh-gray) var(--sh-gray) var(--sh-main);
 $nav-tabs-border-radius:            0;
 
