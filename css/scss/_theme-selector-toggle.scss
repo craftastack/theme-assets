@@ -1,0 +1,40 @@
+.theme-selector-toggle-container {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    
+    .theme-selector-toggle {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+
+
+        &:checked ~ .theme-selector-toggle-icon:before {
+            content: "\f186";
+        }
+        
+        &:not(:checked) ~ .theme-selector-toggle-icon:before {
+            content: "\f185";
+        }
+    }
+        
+    .theme-selector-toggle-icon {
+        &:before {
+            font-family: "Font Awesome 6 Free";
+            display: inline-block;
+            font-style: normal;
+            font-variant: normal;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+            font-weight: 600;
+            transition: transform .35s;
+        }
+    }
+}
